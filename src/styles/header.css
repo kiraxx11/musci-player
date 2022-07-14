@@ -1,0 +1,159 @@
+html{
+    box-sizing: content-box;
+}
+*{margin:0;}
+html*{
+    box-sizing: inherit;
+    
+}
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.253);
+    z-index: 2;
+    position: relative;
+}
+
+header h1{
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+header input {
+    outline: none;
+    border: solid 1px #eee;
+    padding: 10px 15px ;
+    border-radius: 12px;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    text-align: center;
+}
+
+section{
+    height: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    cursor: pointer;
+}
+
+section img{
+    height: 4.5em;
+    width: auto;
+    padding: 5px;
+    border-radius: 8px;
+   
+}
+.info{
+    align-items: center;
+}
+.info p{
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    
+}
+
+.info .artist{
+    color:#aaa;
+    font-size: 1em;
+}
+
+.container{
+    margin-bottom: 6em;
+}
+.playerBott{
+
+    bottom: 0;
+
+    left: 0;
+    right: 0;
+    
+    z-index: 300;
+}
+@media(min-width:1024px){
+  
+    
+    header h1{
+        margin: 20px;
+    }
+    header input {
+        outline: none;
+        border: solid 1px #eee;
+        padding: 10px 15px ;
+        border-radius: 12px;
+        margin-bottom: 0.5em;
+        font-size: 1em;
+        width: 24em;
+        
+    }
+    .container{
+        
+        max-width: 1400px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 3em 4em;
+        margin-bottom: 6em;
+        margin-top: 2em;
+    }
+    section{
+        height: 350px;
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 4px;
+        transition: 0.1s linear;
+        flex-wrap: wrap;
+        align-items: center;
+        border: 1px solid #eee;
+        padding: 10px 5px;
+        cursor: pointer;
+    }
+    section:hover{
+        transform: scale(1.05);
+        box-shadow: 0px 0px 8px rgba(84, 192, 192, 0.295);
+    }
+    
+    section img{
+        width: 250px;
+        height: auto;
+        padding: 0px;
+        
+        border-radius: 4px;
+       
+    }
+    .info{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 1em;
+    }
+    .info p{
+        font-size: 1.1em;
+        margin-bottom: 5px;
+        margin-left: 0;
+        
+    }
+    
+    .info .artist{
+        color:#aaa;
+        font-size: 1em;
+    }
+   
+   
+    .playerBott{
+    
+        bottom: 0;
+    
+        left: 0;
+        right: 0;
+        
+        z-index: 300;
+    }
+    
+}
