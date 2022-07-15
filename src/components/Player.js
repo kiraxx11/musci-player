@@ -3,8 +3,7 @@ import '../styles/player.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faCirclePlay, faCirclePause,faXmarkCircle,faTired } from '@fortawesome/free-regular-svg-icons'
 
-import {styled, Typography, Slider,
-    Paper, Stack, Box} from '@mui/material'
+import {styled, Slider} from '@mui/material'
 import VolumeDownIcon from '@mui/icons-material/VolumeDown';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import VolumeOffIcon from '@mui/icons-material/VolumeOff';

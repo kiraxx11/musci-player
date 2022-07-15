@@ -1,14 +1,6 @@
 import axios from 'axios'
 
 
-const API_KEY = `a6a38d0db68ca99e691b06f44f11c150`;
-
-const config={
-    app_id: 551202,
-    cliend_secret: 'a6a38d0db68ca99e691b06f44f11c150',
-    user_id:4620449362,
-    url_llamada:'http://localhost:3000/'
-}
 
 
 const instance=axios.create({

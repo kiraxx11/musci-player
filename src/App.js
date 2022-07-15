@@ -1,5 +1,5 @@
 
-import { useEffect,useState } from 'react';
+import { useState } from 'react';
 import {Formik,Form,Field} from 'formik'
 import {getAlbums} from './functions/api.js'
 import './styles/header.css'
