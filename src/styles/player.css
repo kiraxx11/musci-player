@@ -81,6 +81,8 @@
     transform: scale(1.2);
     background-color: rgb(80, 80, 80);
 }
+
+
 @media(min-width:1024px){
     .playerContainer{
         position: fixed;

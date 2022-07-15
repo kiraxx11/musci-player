@@ -11,7 +11,7 @@ import {Player} from './components/Player.js'
 function App() {
   const [songs, setsongs] = useState([])
   const [played, setplayed] = useState("");
-
+ 
   const currentSong=(song)=>{
     setplayed(song)
     
